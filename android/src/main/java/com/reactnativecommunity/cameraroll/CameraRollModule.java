@@ -248,7 +248,7 @@ public class CameraRollModule extends NativeCameraRollModuleSpec {
                     }
                   });
         }
-      } catch (IOException e) {
+      } catch (Exception e) {
         mPromise.reject(e);
       } finally {
         if (input != null) {
